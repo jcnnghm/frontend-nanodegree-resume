@@ -47,6 +47,7 @@ var bio = {
         }
         for (var contact in this.contacts) {
             new Content(this.contacts[contact], contactToFormatMap[contact]).appendTo('#topContacts');
+            new Content(this.contacts[contact], contactToFormatMap[contact]).appendTo('#footerContacts');
         }
 
         // Insert bio data
